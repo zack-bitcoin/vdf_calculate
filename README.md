@@ -2,7 +2,7 @@ Verified Delay Function Calculator
 =============
 
 Built for Amoveo.
-[The main Amoveo repo.](https://github.com/zack-bitcoin/amoveo). 
+[The main Amoveo repo.](https://github.com/zack-bitcoin/amoveo)
 
 requires ubuntu.
 
