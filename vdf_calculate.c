@@ -6,12 +6,8 @@
 
 int main(int argc, char *argv[])
 {
-  //printf("main\n");
-  //printf("%s", argv[1]);
-  //printf("\n");
-  char* hash = argv[1];
-  char *pos = hash;
-  //unsigned char hash2[32];
+  char * hash = argv[1];
+  char * pos;
   BYTE hash2[32];
 
   for (size_t count = 0; count < sizeof hash2/sizeof *hash2; count++) {
@@ -40,7 +36,7 @@ int main(int argc, char *argv[])
         }
       //store a checkpoint
       printf("checkpoint\n");
-      printf(hash2);
+      printf("%s", hash2);
       printf("\n");
     }
 }
