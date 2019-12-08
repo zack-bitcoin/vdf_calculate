@@ -31,13 +31,13 @@ int main(int argc, char *argv[])
           sha256_update(&ctx, hash, 32);
           sha256_final(&ctx, buf);
           for(int z = 0; z < 32; z++)
+            //copy the result from buf[32] to hash[32], to prepare to calculate the next hash.
             {
               hash[z] = buf[z];
             }
         }
-      //store a checkpoint
-      //printf("checkpoint\n");
-      //printf("%s", hash);
+      
+      //print out a checkpoint
       for (size_t count = 0; count < sizeof hash/sizeof *hash; count++) {
         printf("%02hhx", hash[count]);
       }
