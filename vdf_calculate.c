@@ -36,8 +36,11 @@ int main(int argc, char *argv[])
             }
         }
       //store a checkpoint
-      printf("checkpoint\n");
-      printf("%s", hash);
+      //printf("checkpoint\n");
+      //printf("%s", hash);
+      for (size_t count = 0; count < sizeof hash/sizeof *hash; count++) {
+        printf("%02hhx", hash[count]);
+      }
       printf("\n");
     }
 }
