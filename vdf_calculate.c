@@ -7,15 +7,18 @@
 int main(int argc, char *argv[])
 {
   char * inhex = argv[1];
-  int many = atoi(argv[2]);
-  int period = atoi(argv[3]);
+  int many = atoi(argv[2]);//how many checkpoints we will calculate
+  int period = atoi(argv[3]);//how many hashes are between each pair of checkpoints.
 
   BYTE hash[32];
   SHA256_CTX ctx;//stores intermediate state while computing a hash.
   BYTE buf[32];//stores intermediate state between computing hashes.
 
-  //convert the hex input into bytes.
-  for (size_t count = 0; count < sizeof hash/sizeof *hash; count++) {
+  //convert the hex input inhex into bytes stored in hash[32].
+  for (size_t count = 0;
+       count < sizeof hash/sizeof *hash;
+       count++)
+    {
     sscanf(inhex, "%2hhx", &hash[count]);
     inhex += 2;
   }
@@ -38,7 +41,10 @@ int main(int argc, char *argv[])
         }
       
       //print out a checkpoint
-      for (size_t count = 0; count < sizeof hash/sizeof *hash; count++) {
+      for (size_t count = 0;
+           count < sizeof hash/sizeof *hash;
+           count++)
+        {
         printf("%02hhx", hash[count]);
       }
       printf("\n");
