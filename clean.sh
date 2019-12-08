@@ -1,0 +1,2 @@
+
+pkill vdf_calculator
