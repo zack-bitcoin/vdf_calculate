@@ -30,9 +30,9 @@ sh build.sh
 
 Here is an example
 
-```./vdf_calculate deadbEEf 4 500000```
+```./vdf_calculate "deadbEEf000000000000000000000000000000000000000000000000000000" 1 1000```
 
-it starts with the block hash in hexidecimal: "deadbeef000000000..."
+it starts with the 32-byte block hash in hexidecimal: "deadbeef000000000..."
 
 it takes 4 batches of 1/2 million hashes, taking a checkpoint between each batch.
 
