@@ -1,2 +1,2 @@
 
-pkill vdf_calculator
+pkill vdf_calculate
