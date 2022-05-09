@@ -30,7 +30,7 @@ sh build.sh
 
 Here is an example
 
-```./vdf_calculate "deadbEEf000000000000000000000000000000000000000000000000000000" 4 2000000```
+```./vdf_calculate "deadbEEf000000000000000000000000000000000000000000000000000000" 4 500000```
 
 it starts with the 32-byte block hash in hexidecimal: "deadbeef000000000..."
 
